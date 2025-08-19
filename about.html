@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sasto phone</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+     <!-- Navigation -->
+   <div id="header"></div>
+   <section class="main">
+    
+   
+    
+        <div class="container-fluid">
+    
+    
+        <div class="page-title">About Us</div>
+    
+        
+    
+    </div>
+    </section>
+     <section class="aboutus-page-section">
+        <div class="container-fluid">
+            
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="aboutus-page-card">
+                        <h3 class="fw-bold mb-4">Who We Are</h3>
+                        <p class="mb-3">
+                            Founded in 2019, Sastophone has emerged as a leading name in the refurbished smartphone industry. 
+                            We specialize in buying, repairing, and selling pre-owned mobile devices, giving them a new lease on life.
+                        </p>
+                        <p class="mb-3">
+                            Our team of certified technicians ensures that every device meets rigorous quality standards. 
+                            We offer premium quality smartphones at affordable prices, making technology accessible to everyone.
+                        </p>
+                        <p class="mb-0">
+                            Built on the foundation of sustainability and excellence, Sastophone has earned a reputation for 
+                            reliability and exceptional customer service in the mobile technology sector.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+                         alt="Sastophone - Mobile phone repair and refurbishment" 
+                         class="aboutus-page-image">
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="us-features-section">
+        <div class="container-fluid">
+            <div class="row g-4">
+                <!-- Quality Checked Phones -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="us-feature-card">
+                        <div class="row">
+                        <div class="col-lg-4 us-feature-icon us-quality">
+                            <img src="img/quality.svg" alt="">
+                        </div>
+                        
+                        <div class="col-lg-8">
+                        <h3 class="us-feature-title">Quality Checked Phones</h3>
+                        <p class="us-feature-description">
+                            All our phones are locally sourced and carefully tested for reliability.
+                        </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trusted Warranty -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="us-feature-card">
+                        <div class="row">
+                        <div class="col-lg-4 us-feature-icon us-quality">
+                            <img src="img/trust.svg" alt="">
+                        </div>
+                        <div class="col-lg-8">
+                        <h3 class="us-feature-title">Trusted Warranty</h3>
+                        <p class="us-feature-description">
+                            Enjoy up to 6-months warranty on both hardware and software.
+                        </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Top-Rated by Customers -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="us-feature-card">
+                        <div class="row">
+                        <div class="col-lg-4 us-feature-icon us-quality">
+                            <img src="img/star.svg" alt="">
+                        </div>
+                         <div class="col-lg-8">
+                        <h3 class="us-feature-title">Top-Rated by Customers</h3>
+                        <p class="us-feature-description">
+                            Our customers trust us and consistently give us top ratings.
+                        </p>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="white-line"></div>
+    
+
+   
+
+ <!-- Footer Section -->
+   <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+  async function loadPart(id, file) {
+    const response = await fetch(file);
+    document.getElementById(id).innerHTML = await response.text();
+  }
+
+  loadPart("header", "header.html");
+  loadPart("footer", "footer.html");
+</script>
+   
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sasto phone</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+     <!-- Navigation -->
+   <div id="header"></div>
+  <section class="policies">
+      <div class="container-fluid">
+        <div class="privacy-card">
+          <h4 class="privacy-title">Terms and Conditions</h4>
+      <p class="privacy-text">
+  <strong>Effective Date: </strong>[Insert Date]<br />
+  Welcome to <strong>Sastophone</strong>. By accessing or using our website 
+  (<a href="https://www.sastophone.com/" class="privacy-link">https://www.sastophone.com/</a>), 
+  you agree to abide by the following <strong>Terms & Conditions ("Terms").</strong> 
+  Please read them carefully before using our services.<br /><br />
+
+  <strong>1. Acceptance of Terms</strong><br />
+  By using <strong>Sastophone</strong>, you agree to these Terms and our Privacy Policy. 
+  If you do not agree, please discontinue using our services immediately.<br /><br />
+
+  <strong>2. User Accounts</strong><br />
+  <strong>•&nbsp;&nbsp;</strong>&nbsp;&nbsp;You must provide accurate and complete information when creating an account.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>You are responsible for maintaining the confidentiality of your account credentials.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>Any unauthorized use of your account must be reported immediately.<br /><br />
+
+  <strong>3. Use of Services</strong><br />
+  <strong>•&nbsp;&nbsp;&nbsp;</strong>&nbsp;Customers can sell their old phones through our platform.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;</strong>&nbsp;Sastophone may inspect, repair, and resell devices purchased from users.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>Buyers can purchase certified, refurbished phones from our platform.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>Users must not engage in fraudulent, misleading, or illegal activities while using the platform.<br /><br />
+
+  <strong>4. Payment & Transactions</strong><br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>Payments for purchases are processed securely through authorized payment gateways.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>Sastophone does not store sensitive payment details (e.g., credit/debit card numbers).<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>For selling old phones, payouts are made directly to the seller’s provided account/wallet.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>We are not responsible for disputes arising from payment processing delays or third-party providers.<br /><br />
+
+  <strong>5. Prohibited Activities</strong><br />
+  Users must not:<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>Use the platform for unlawful or fraudulent purposes.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>Provide false, misleading, or stolen device information.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>Interfere with or disrupt the functionality of the platform.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>Harass, abuse, or harm other users or staff members.<br /><br />
+
+  <strong>6. Device Inspection & Warranty</strong><br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>All devices sold to Sastophone are subject to inspection and verification.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>Refurbished devices sold by Sastophone may include a limited warranty, as specified during purchase.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>Sastophone reserves the right to reject devices that are counterfeit, stolen, or beyond repair.<br /><br />
+
+  <strong>7. Termination of Services</strong><br />
+  We reserve the right to suspend or terminate user accounts that violate these Terms without prior notice.<br /><br />
+
+  <strong>8. Disclaimer of Liability</strong><br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>Sastophone acts as a platform for buying, refurbishing, and selling devices and is not responsible for losses arising from misuse of sold/bought devices.<br />
+  <strong>•&nbsp;&nbsp;&nbsp;&nbsp;</strong>We are not liable for damages, losses, or disputes arising from user interactions or third-party services (such as delivery or payment providers).<br /><br />
+
+  <strong>9. Indemnification</strong><br />
+  Users agree to indemnify and hold Sastophone harmless from any claims, damages, or liabilities resulting from their use of our services.<br /><br />
+
+  <strong>10. Changes to Terms</strong><br />
+  We may update these Terms periodically. Continued use of our services after changes are made signifies acceptance of the revised Terms.<br /><br />
+
+  For any questions regarding these Terms, please contact us at 
+  <a href="mailto:support@sastophone.com" class="privacy-link">support@sastophone.com</a>.
+</p>
+
+        </div>
+      </div>
+    </section>
+    
+
+
+ <!-- Footer Section -->
+   <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+  async function loadPart(id, file) {
+    const response = await fetch(file);
+    document.getElementById(id).innerHTML = await response.text();
+  }
+
+  loadPart("header", "header.html");
+  loadPart("footer", "footer.html");
+</script>
+   
+  </body>
+</html>

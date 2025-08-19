@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sasto phone</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+     <!-- Navigation -->
+   <div id="header"></div>
+    <!-- Hero Section with Carousel -->
+    <section class="sasto-hero">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="img/b1.png" alt="Welcome slide background" loading="lazy">
+                    <div class="container-fluid">
+                        <div class="carousel-content">
+                            <h1 class="display-1 fw-bold">Welcome</h1>
+                            <p class="lead">Discover amazing products and services that will transform your experience with cutting-edge technology and innovation.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="img/b2.png" alt="Innovation slide background" loading="lazy">
+                    <div class="container-fluid">
+                        <div class="carousel-content">
+                            <h1 class="display-1 fw-bold">Innovation</h1>
+                            <p class="lead">Experience the future today with our revolutionary solutions designed to simplify your life and boost productivity.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="img/b3.png" alt="Excellence slide background" loading="lazy">
+                    <div class="container-fluid">
+                        <div class="carousel-content">
+                            <h1 class="display-1 fw-bold">Excellence</h1>
+                            <p class="lead">Join thousands of satisfied customers who have chosen quality, reliability, and exceptional service.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+ <section class="us-features-section">
+        <div class="container-fluid">
+            <div class="row g-4">
+                <!-- Quality Checked Phones -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="us-feature-card">
+                        <div class="row">
+                        <div class="col-lg-4 us-feature-icon us-quality">
+                            <img src="img/quality.svg" alt="">
+                        </div>
+                        
+                        <div class="col-lg-8">
+                        <h3 class="us-feature-title">Quality Checked Phones</h3>
+                        <p class="us-feature-description">
+                            All our phones are locally sourced and carefully tested for reliability.
+                        </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trusted Warranty -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="us-feature-card">
+                        <div class="row">
+                        <div class="col-lg-4 us-feature-icon us-quality">
+                            <img src="img/trust.svg" alt="">
+                        </div>
+                        <div class="col-lg-8">
+                        <h3 class="us-feature-title">Trusted Warranty</h3>
+                        <p class="us-feature-description">
+                            Enjoy up to 6-months warranty on both hardware and software.
+                        </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Top-Rated by Customers -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="us-feature-card">
+                        <div class="row">
+                        <div class="col-lg-4 us-feature-icon us-quality">
+                            <img src="img/star.svg" alt="">
+                        </div>
+                         <div class="col-lg-8">
+                        <h3 class="us-feature-title">Top-Rated by Customers</h3>
+                        <p class="us-feature-description">
+                            Our customers trust us and consistently give us top ratings.
+                        </p>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- About Us Section -->
+    <section class="aboutus-sec-wrapper">
+        <div class="container-fluid">
+            <div class="aboutus-sec-container">
+                <h2 class="aboutus-sec-title">About Us</h2>
+                
+                <p class="aboutus-sec-description">
+                    We are a trusted platform dedicated to giving smartphones a second life. By buying old phones, carefully repairing them, and reselling at affordable prices, we make technology accessible while reducing electronic waste. Our mission is to provide reliable devices, honest value and a sustainable choice for everyone.
+                </p>
+                
+                <a class="aboutus-sec-btn mb-5" href="about.html">About Us</a>
+               
+                <div class="aboutus-sec-image-container">
+                    <img src="img/about.png" 
+                         alt="Collection of refurbished smartphones" 
+                         class="aboutus-sec-phones-image">
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Footer Section -->
+   <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+  async function loadPart(id, file) {
+    const response = await fetch(file);
+    document.getElementById(id).innerHTML = await response.text();
+  }
+
+  loadPart("header", "header.html");
+  loadPart("footer", "footer.html");
+</script>
+   
+  </body>
+</html>
